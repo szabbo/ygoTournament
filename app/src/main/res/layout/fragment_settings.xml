@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/ic_millenium_puzzle"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <EditText
+            android:id="@+id/username_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Enter new username"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/team_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Enter new team"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/konamiID_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/team_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Enter new Konami ID"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/new_pass_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/konamiID_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Enter new password"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/confirm_pass_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_pass_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="Confirm password"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/pass_button_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_pass_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Password"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/userInfo_button_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pass_button_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Other Info"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signout_button_settings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userInfo_button_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Sign Out"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
